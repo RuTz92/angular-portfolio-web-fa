@@ -1,6 +1,8 @@
 div{
-  background-image: url(../../assets/Banner.jpg);
+  width: 100%;
+ background-image: url(../../assets/Banner.jpg);
   height: 200px;
   text-align: center;
+  
   
   }
