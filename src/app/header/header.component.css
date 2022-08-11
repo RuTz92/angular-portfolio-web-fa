@@ -1,18 +1,9 @@
-.RightHeader{
-    background-color: rgb(155, 67, 67);
-    color: white;
-    padding: 10px;
-    margin-top: 25px ;
-    margin-left: 5px;
-    margin-right: 20px;
-    float: right;
+div{
+    background-image: url(../../assets/Banner.jpg)
 }
-.LeftHeader{
-    background-color: rgb(155, 67, 67);
-    color: white;
-    padding: 10px;
-    margin-top: 25px ;
-    margin-left: 0px;
-    margin-right: 20px;
-    float: left;
+
+app-rsocial {
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
 }
