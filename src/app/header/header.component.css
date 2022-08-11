@@ -2,7 +2,8 @@
     background-color: rgb(155, 67, 67);
     color: white;
     padding: 10px;
-    margin-left: 20px;
+    margin-top: 25px ;
+    margin-left: 5px;
     margin-right: 20px;
     float: right;
 }
@@ -10,7 +11,8 @@
     background-color: rgb(155, 67, 67);
     color: white;
     padding: 10px;
-    margin-left: 20px;
+    margin-top: 25px ;
+    margin-left: 0px;
     margin-right: 20px;
     float: left;
 }
