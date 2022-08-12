@@ -13,6 +13,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { LogoAPComponent } from './logo-ap/logo-ap.component';
 import { RSocialComponent } from './rsocial/rsocial.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     SkillsComponent,
     ProyectosComponent,
     LogoAPComponent,
-    RSocialComponent
+    RSocialComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

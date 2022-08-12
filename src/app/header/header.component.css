@@ -8,6 +8,24 @@ div{
 app-rsocial {
     float: right;
     margin-top: 35px;
-    margin-right: 10px;
+    margin-right: 0.5em;
 }
 
+app-login{
+    float: right;    
+    margin-top: 35px;
+    margin-right: 0.5em;
+    align-items: center;
+}
+
+/* para la vista de celular */
+
+
+
+@media(max-width:504px){
+    app-rsocial, app-login{
+        display: inline;
+    flex-direction: column;    
+    align-items: center;
+    }
+}

@@ -6,4 +6,5 @@
     background-color:   #405061;
 ;
     border-radius: 50%;
+    flex-direction: column;
 }

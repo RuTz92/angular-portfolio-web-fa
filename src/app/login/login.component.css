@@ -1,0 +1,11 @@
+.row{
+    margin-right: 0.5em;
+}
+
+button{
+    font-weight: bold;
+}
+
+.row{
+    flex-direction: column;
+}

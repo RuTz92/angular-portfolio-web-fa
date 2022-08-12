@@ -31,11 +31,10 @@ span{
 @media(max-width:504px){
   #fotoperfil{
     position:absolute;
-    width: 30%;
+    width: 20%;
     border-radius: 100%;
     box-shadow: 3px 3px 3px;
-    left: 33%;
-    top: 230px;
-    
+    left: 40%;
+    top: 250px;    
   }
 }
