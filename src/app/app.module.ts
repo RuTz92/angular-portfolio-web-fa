@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { LogoAPComponent } from './logo-ap/logo-ap.component';
 import { RSocialComponent } from './rsocial/rsocial.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,15 @@ import { RSocialComponent } from './rsocial/rsocial.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,})
   ],
   providers: [],
   bootstrap: [AppComponent]
