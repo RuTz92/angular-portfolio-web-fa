@@ -1,6 +1,8 @@
 div{
-    background-image: url(../../assets/Nota-profesiones-SF-10.jpg);
+   
     background-position: 0% 9%;
+    background-repeat: no-repeat;
+    width: 100%;
     
 }
 
