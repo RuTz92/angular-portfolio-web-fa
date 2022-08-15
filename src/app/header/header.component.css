@@ -1,5 +1,5 @@
 div{
-   
+    height: 100px;
     background-position: 0% 9%;
     width: 100%;
     
@@ -7,14 +7,14 @@ div{
 
 app-rsocial {
     float: right;
-    margin-top: 35px;
-    margin-right: 0.5em;
+    margin-top: 20px;
+    margin-right: 0em;
 }
 
 app-login{
     float: right;    
-    margin-top: 35px;
-    margin-right: 0.5em;
+    margin-top: 15px;
+    margin-right: 2em;
     align-items: center;
 }
 

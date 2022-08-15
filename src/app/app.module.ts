@@ -14,6 +14,9 @@ import { LogoAPComponent } from './logo-ap/logo-ap.component';
 import { RSocialComponent } from './rsocial/rsocial.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { Login2Component } from './login2/login2.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     ProyectosComponent,
     LogoAPComponent,
     RSocialComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    Login2Component
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { LoginComponent } from './login/login.component';
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-      animationDuration: 300,})
+      animationDuration: 300,}),
+      HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
