@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { Login2Component } from './login2/login2.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { Login2Component } from './login2/login2.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
