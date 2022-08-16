@@ -1,8 +1,10 @@
 .row{
   padding: 15px;
-  text-align: center;
 }
 
+div{
+  text-align: center;
+}
 span{
   text-align:center;
 }
