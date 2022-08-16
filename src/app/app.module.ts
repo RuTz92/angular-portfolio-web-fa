@@ -19,6 +19,9 @@ import { HomeComponent } from './home/home.component';
 import { Login2Component } from './login2/login2.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { interceptorProvider } from './service/interceptor-service';
     RSocialComponent,
     LoginComponent,
     HomeComponent,
-    Login2Component
+    Login2Component,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,

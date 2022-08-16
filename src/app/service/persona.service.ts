@@ -10,6 +10,7 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   url = 'http://localhost:8080/personas/';
+  
   constructor(private http: HttpClient) {}
 
 
