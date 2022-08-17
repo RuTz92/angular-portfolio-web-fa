@@ -1,24 +1,32 @@
 <div class="row">
     <h1>Educacion</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Estudio 1</h1> - <h3>(years)</h3>
-            </li>
-            <p>Escribir toda la informacion de tu formacion academica, certificaciones, cursos y todo lo relacionado al titulo con que actualmente contas. es importante detallar la informacion de la institucion, el logo, nombre, carrera estudiada y en que periodo o año.</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Estudio 2</h1> - <h3>(years)</h3>
-            </li>
-            <p>Descripcion del Estudio 2</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Estudio 3</h1> - <h3>(years)</h3>
-            </li>
-            <p>Descripcion del Estudio 3</p>
-        </ul>
+    <div class="col-lg-2" >
+        <button class="btn btn-secondary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
     </div>
+    <div class="col-lg-1  col-md-1 col-sm-1"></div>
+    <div class="col-lg-11 col-md-11 col-sm-11">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Educacion of educacion">
+                <td>
+                    <h2>{{Educacion.nombreE}}</h2>
+                </td>
+                <td>
+                    {{Educacion.descripcionE}}
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-dark" routerLink="/editedu/{{Educacion.id}}">
+                    <i class="bi bi-pencil"></i>    
+                    Editar EDU                
+                </button>
+                    </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(Educacion.id)" >
+                    <i class="bi bi-trash-fill"></i>Borrar EDU</button></td>
+            </tr>
+        </tbody>
+    </table>
 </div>  
+</div>
