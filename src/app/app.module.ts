@@ -23,6 +23,7 @@ import { NewExperienciaComponent } from './experiencia/new-experiencia.component
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './educacion/neweducacion.component';
 import { EditeducacionComponent } from './educacion/editeducacion.component';
+import { TviewComponent } from './tview/tview.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { EditeducacionComponent } from './educacion/editeducacion.component';
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    TviewComponent
   ],
   imports: [
     BrowserModule,

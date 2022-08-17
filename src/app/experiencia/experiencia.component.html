@@ -1,5 +1,6 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
+    <div class="col-lg-10"></div>
     <div class="col-lg-2" >
         <button class="btn btn-secondary" routerLink="/nuevaexp" *ngIf="isLogged">
             Nueva Experiencia
@@ -14,7 +15,7 @@
                     <h2>{{Experiencia.nombreE}}</h2>
                 </td>
                 <td>
-                    {{Experiencia.descripcionE}}
+                    <h3>{{Experiencia.descripcionE}}</h3>
                 </td>
                 <td *ngIf="isLogged">
                     <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
