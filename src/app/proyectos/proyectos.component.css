@@ -26,3 +26,11 @@ h1, h3 {
 .img-proyecto{
   box-shadow: 22px 12px 20px gray;
 }
+
+#Foto1{
+  height: 200px;
+}
+
+p{
+  margin-top: 20px;
+}
