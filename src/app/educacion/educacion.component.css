@@ -12,3 +12,7 @@ h2, h3 {
   display: inline;
   color: white;
 }
+
+h1{
+  text-decoration: underline; 
+}

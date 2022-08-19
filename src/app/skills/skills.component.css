@@ -6,10 +6,11 @@
 div{  
   background-color:#405061;
   color: white;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 h1, h3 { 
   display: inline;
+  text-decoration: underline; 
 }

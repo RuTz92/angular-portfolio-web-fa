@@ -12,6 +12,7 @@ div{
 
 h1, h3 { 
   display: inline;
+  text-decoration: underline; 
 }
 
 .contenedor{
@@ -20,17 +21,18 @@ h1, h3 {
 
 .parte1, .parte2{
   display: inline-block;
-  text-align: justify;
+  text-align: center;
 }
 
 .img-proyecto{
   box-shadow: 22px 12px 20px gray;
 }
 
-#Foto1{
+#Foto{
   height: 200px;
 }
 
 p{
   margin-top: 20px;
 }
+
