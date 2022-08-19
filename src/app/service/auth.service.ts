@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://proyectowebfa.herokuapp.com/';
+  authURL = 'https://sheltered-thicket-39128.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
