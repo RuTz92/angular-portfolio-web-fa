@@ -5,8 +5,27 @@
 
 button{
     font-weight: bold;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    align-items: center;
+    flex-direction: column;
 }
 
 .row{
     flex-direction: column;
 }
+
+@media (max-width: 700px) {
+    button {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 50%;
+    }
+    }

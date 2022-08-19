@@ -5,4 +5,14 @@
     margin-left: 50px;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #logoAP{
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: -10px;
+        margin-left: 40px;
+    }
 }

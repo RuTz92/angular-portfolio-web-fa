@@ -22,7 +22,11 @@ app-login{
 
 
 
-@media(max-width:504px){
+@media(max-width:700px){
+    div{
+        height: 220px;
+    }
+
     app-rsocial, app-login{
         display: inline;
     flex-direction: column;    
