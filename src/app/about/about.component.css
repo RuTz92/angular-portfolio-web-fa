@@ -8,35 +8,29 @@ div{
 span{
   text-align:center;
 }
-
+p{
+  text-align: justify;
+}
 /*etiqueta nombre*/
 
 #nombre{
   font-size: 30px;
   font-weight:bold;
+  margin-top: 20px;
 }
 
 
-/*estilo de foto de perfil*/
-@media(min-width:505px){
-  #fotoperfil{
-    position:absolute;
-    width: 15%;
-    border-radius: 100%;
-    box-shadow: 3px 3px 3px;
-    left: 2%;
-    top: 230px;
-    
-  }
-}
-
-@media(max-width:504px){
-  #fotoperfil{
-    position:absolute;
+#fotoperfil{
     width: 40%;
     border-radius: 100%;
     box-shadow: 3px 3px 3px;
-    left: 32%;
-    top: 300px;    
+    margin-top:-50px;
+    
   }
+
+  @media (min-width: 766px) {
+    #fotoperfil{
+      width:100%;
+    }
 }
+
