@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://sheltered-thicket-39128.herokuapp.com/educacion/';
+  URL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -1,9 +1,14 @@
 <div class="row">
-    <h1 class="text-center">HARD SKILLS</h1>
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>HTML</h5>
+    <div class="col-lg-8 text-center offset-lg-2 "><h1 class="text-center">HARD & SOFT SKILLS</h1>
+    </div>
+    <div class="col-lg-2 text-center">
+      <button type="button" routerLink="/newskill" class="btn btn-secondary" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+    
+<div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
+    <h5>{{skill.nombre}}</h5>
     <circle-progress
-    [percent]="55"
+    [percent]="(skill.porcentaje)"
     [radius]="70"
     [outerStrokeWidth]="10"
     [innerStrokeWidth]="3"
@@ -21,116 +26,19 @@
     [subtitleColor]="'#ffffff'"
 
   ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>CSS</h5>
-    <circle-progress
-    [percent]="35"
-    [radius]="70"
-    [outerStrokeWidth]="10"
-    [innerStrokeWidth]="3"
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'"
-    [animation]="true"
-    [animationDuration]="800"
-    [titleColor]="'#FFFFFF'"
-    [unitsColor]="'#FFFFFF'"
-    [titleFontSize]="'25'"
-    [subtitleFontSize]="'20'"
-    [unitsFontSize]="'15'"
-    [space]="2"
-    [outerStrokeGradient]="true"
-    [subtitleColor]="'#ffffff'"
+<div>
+  <td *ngIf="isLogged">
+    <button class="btn btn-dark" routerLink="/editskill/{{skill.id}}">
+    <i class="bi bi-pencil"></i>                
+</button>
+    </td>
+<td *ngIf="isLogged">
+    <button class="btn btn-danger" (click)="delete(skill.id)" >
+    <i class="bi bi-trash-fill"></i></button></td>
+  </div> 
+ </div>
 
-  ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>JS</h5>
-    <circle-progress
-    [percent]="45"
-    [radius]="70"
-    [outerStrokeWidth]="10"
-    [innerStrokeWidth]="3"
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'"
-    [animation]="true"
-    [animationDuration]="800"
-    [titleColor]="'#FFFFFF'"
-    [unitsColor]="'#FFFFFF'"
-    [titleFontSize]="'25'"
-    [subtitleFontSize]="'20'"
-    [unitsFontSize]="'15'"
-    [space]="2"
-    [outerStrokeGradient]="true"
-    [subtitleColor]="'#ffffff'"
 
-  ></circle-progress>
-  </div>
-  <h1 class="text-center">SOFT SKILLS</h1>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>INGLES</h5>
-    <circle-progress
-    [percent]="92"
-    [radius]="70"
-    [outerStrokeWidth]="10"
-    [innerStrokeWidth]="3"
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'"
-    [animation]="true"
-    [animationDuration]="800"
-    [titleColor]="'#FFFFFF'"
-    [unitsColor]="'#FFFFFF'"
-    [titleFontSize]="'25'"
-    [subtitleFontSize]="'20'"
-    [unitsFontSize]="'15'"
-    [space]="2"
-    [outerStrokeGradient]="true"
-    [subtitleColor]="'#ffffff'"
-
-  ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>RESOLUCION DE PROBLEMAS</h5>
-    <circle-progress
-    [percent]="95"
-    [radius]="70"
-    [outerStrokeWidth]="10"
-    [innerStrokeWidth]="3"
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'"
-    [animation]="true"
-    [animationDuration]="800"
-    [titleColor]="'#FFFFFF'"
-    [unitsColor]="'#FFFFFF'"
-    [titleFontSize]="'25'"
-    [subtitleFontSize]="'20'"
-    [unitsFontSize]="'15'"
-    [space]="2"
-    [outerStrokeGradient]="true"
-    [subtitleColor]="'#ffffff'"
-
-  ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <h5>ADAPTABILIDAD</h5>
-    <circle-progress
-    [percent]="90"
-    [radius]="70"
-    [outerStrokeWidth]="10"
-    [innerStrokeWidth]="3"
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'"
-    [animation]="true"
-    [animationDuration]="800"
-    [titleColor]="'#FFFFFF'"
-    [unitsColor]="'#FFFFFF'"
-    [titleFontSize]="'25'"
-    [subtitleFontSize]="'20'"
-    [unitsFontSize]="'15'"
-    [space]="2"
-    [outerStrokeGradient]="true"
-    [subtitleColor]="'#ffffff'"
-
-  ></circle-progress>
-  </div>
+  
+  
 </div>
