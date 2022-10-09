@@ -11,10 +11,23 @@
         <tbody>
             <tr *ngFor="let Experiencia of expe">
                 <td>
+                    <div style="text-align: center;">
+
+                        <img width="100" height=100px src="{{Experiencia.logo}}" alt="Sin Logo">
+                        
+                        </div>
+                </td>
+                <td>
                     <h2>{{Experiencia.nombreE}}</h2>
                 </td>
                 <td>
-                    <h3>{{Experiencia.descripcionE}}</h3>
+                    <h4>{{Experiencia.puesto}}</h4>
+                </td>
+                <td>
+                    <h6>{{Experiencia.descripcionE}}</h6>
+                </td>
+                <td>
+                    <h4>{{Experiencia.periodo}}</h4>
                 </td>
                 <td *ngIf="isLogged">
                     <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">

@@ -9,7 +9,7 @@ import { SExperienciaService } from '../service/s-experiencia.service';
   styleUrls: ['./edit-experiencia.component.css']
 })
 export class EditExperienciaComponent implements OnInit {
-  expLab: Experiencia = new Experiencia("DAM", "Trader");
+  expLab: Experiencia = new Experiencia("DAM", "Trader", "Compra y venta", null, "2016-ACT");
 
 
   constructor(private sExperiencia: SExperienciaService, private activatedRouter: ActivatedRoute, private router: Router) { }

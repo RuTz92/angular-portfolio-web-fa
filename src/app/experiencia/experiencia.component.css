@@ -9,9 +9,10 @@ div{
   color: white;
 }
 
-h2, h3 { 
+h2, h3, h4, h6 { 
   display: inline;
   color: white;
+  justify-content: flex-end;
 }
 
 h1{
