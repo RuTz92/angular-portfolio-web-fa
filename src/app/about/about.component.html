@@ -7,16 +7,15 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
         <p class="text-center" id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
-        <p class="text-center">Full Stack Developer Jr</p>
+        <p class="text-center">{{persona.titulo1}}</p>
+        <p class="text-center">{{persona.titulo2}}</p>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
         <span>
             <h2>Acerca de {{persona.nombre}}</h2>
-            <p class="text-justify">Franco es una persona muy curiosa, constantemente busca aprender nuevas herramientas y habilidades que
-                lo ayuden a crecer tanto intelectual como personalmente. Los números y el pensamiento critico es su
-                pasion, por eso le llama mucho la atención los mercados financieros, la programación y la estadistica.
-
+            <p class="text-justify">{{persona.descripcion}}
             </p>
         </span>
     </div>
+    
 </div> 
