@@ -11,10 +11,20 @@
         <tbody>
             <tr *ngFor="let Educacion of educacion">
                 <td>
-                    <h2>{{Educacion.nombreE}}</h2>
+                    <div style="text-align: center;">
+
+                        <img width="300" height=100px src="{{Educacion.logo}}">
+                        
+                        </div>
+                </td>
+                <td>
+                    <h4>{{Educacion.nombreE}}</h4>
                 </td>
                 <td>
                     <h3>{{Educacion.descripcionE}}</h3>
+                </td>
+                <td>
+                    <h3>{{Educacion.periodo}}</h3>
                 </td>
                 <td *ngIf="isLogged">
                     <button class="btn btn-dark" routerLink="/editedu/{{Educacion.id}}">

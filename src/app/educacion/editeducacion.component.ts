@@ -10,7 +10,7 @@ import { EducacionService } from '../service/educacion.service';
 })
 export class EditeducacionComponent implements OnInit {
 
-  educacion: Educacion = new Educacion("ArgPrograma", "arg");
+  educacion: Educacion = new Educacion("ArgPrograma", "arg", null, "2022");
 
   constructor(private educacionS: EducacionService, private activatedRouter: ActivatedRoute, private router: Router) { }
   
