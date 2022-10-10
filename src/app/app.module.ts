@@ -30,6 +30,8 @@ import { EditAboutComponent } from './about/edit-about.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditProyectoComponent } from './proyectos/edit-proyecto.component';
+import { NewProyectoComponent } from './proyectos/new-proyecto.component';
 
 
 @NgModule({
@@ -54,7 +56,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     TviewComponent,
     EditSkillComponent,
     NewSkillComponent,
-    EditAboutComponent
+    EditAboutComponent,
+    EditProyectoComponent,
+    NewProyectoComponent
   ],
   imports: [
     BrowserModule,

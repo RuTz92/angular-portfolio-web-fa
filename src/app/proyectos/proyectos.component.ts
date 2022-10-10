@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Proyecto } from '../model/proyecto';
+import { ProyectoService } from '../service/proyecto.service';
+import { TokenService } from '../service/token.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectosComponent implements OnInit {
 
-  constructor() { }
+  proyecto: Proyecto[] = [];
 
-  ngOnInit(): void {
+  constructor(private proyectoService: ProyectoService,
+     private tokenService: TokenService,
+         ) { }
+         isLogged = false;
+
+  ngOnInit(): void {this.cargarProyecto();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else { this.isLogged = false; }
   }
+
+  cargarProyecto(): void {
+    this.proyectoService.lista().subscribe(
+      data => {
+        this.proyecto = data;
+      }
+  )
+    }
+
+    delete(id?:number): void {
+      if(id != undefined){
+        this.proyectoService.delete(id).subscribe(data =>{this.cargarProyecto();}, err => {alert("No se pudo borrar el proyecto");})
+      }
+    }
 
 }

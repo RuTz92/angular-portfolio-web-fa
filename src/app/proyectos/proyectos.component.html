@@ -1,30 +1,30 @@
 <div class="row">
   <h1 class="text-center">PROYECTOS REALIZADOS</h1>
-
-  <div class="container">
+  
+    <button type="button" routerLink="/newproyecto" class="btn btn-secondary" *ngIf="isLogged">Nuevo Proyecto</button>
+  
+  <div class="container" *ngFor="let proyecto of proyecto">
      
         <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1 parte2">
-            <img src="../../assets/toh-anim.gif" class="img-fluid img-proyecto text-center" />
+            <img src={{proyecto.img}} class="img-fluid img-proyecto text-center" />
         </div>
         <div class="col-sm-12 col-md-7 offset-md-1 col-lg-7 offset-lg-1 parte1">
-            <h1>Tour of Heroes</h1>
-            <p>Realice el trabajo de angular: Tour of Heroes</p>
+            <h1>{{proyecto.proyecto}}</h1>
+            <p>{{proyecto.descripcion}}</p>
             <h3>Fecha de Realizacion:</h3>
-            <p>Junio 2022</p>
-        </div>       
+            <p>{{proyecto.fecha}}</p>
+        </div>     
+        <div>
+            <td *ngIf="isLogged">
+              <button class="btn btn-dark" routerLink="/editproyecto/{{proyecto.id}}">
+              <i class="bi bi-pencil"></i>                
+          </button>
+              </td>
+          <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(proyecto.id)" >
+              <i class="bi bi-trash-fill"></i></button></td>
+        </div>   
   </div>
 
-  <div class="container">
-    <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1 parte2">
-        <a href="https://www.google.com.ar">
-            <img src="../../assets/Pantalla de portfolio web FA.jpg" class="img-fluid img-proyecto text-center"/>
-        </a>
-    </div>
-    <div class="col-sm-12 col-md-7 col-lg-7 offset-md-1 offset-lg-1 parte1">
-        <h1>Portfolio Web</h1>
-        <p>El presente trabajo de #YoProgramo lo pude realizar gracias al proyecto Argentina Programa</p>
-        <h3>Fecha de Realizacion:</h3>
-        <p>Agosto 2022</p>
-    </div>
-  </div>
+  
 </div>
