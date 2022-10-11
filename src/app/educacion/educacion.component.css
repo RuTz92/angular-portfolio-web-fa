@@ -22,13 +22,11 @@ h1{
 }
 
 img{
-  
-  max-width: 200px;
+  flex-container: flex;
+  max-width: 100%;
   max-height: 100px;
   align-items: center;
   text-align: center;
-  display: center;
+  display: flex;
   justify-content: center;
-  margin-top: 10px;
-  padding: 10px;
 }
